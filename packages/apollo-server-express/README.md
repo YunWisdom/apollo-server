@@ -41,10 +41,6 @@ async function startApolloServer() {
 }
 ```
 
-## Connect
-
-Before Apollo Server 3, we officially supported using this package with `connect` as well. `connect` is an older framework that `express` evolved from. For now, we believe that this package is still compatible with `connect` and we even run tests against `connect`, but we may choose to break this compatibility at some point without a major version bump. If you rely on the ability to use Apollo Server with `connect`, you may wish to make your own integration.
-
 ## Principles
 
 GraphQL Server is built with the following principles in mind:
