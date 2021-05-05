@@ -21,6 +21,7 @@ The version headers in this history reflect the versions of Apollo Server itself
 - Removed deprecated `ApolloServer.schema` field, which never worked with gateways. If you'd like to extract your schema from your server, make a plugin with `serverWillStart`, or register `onSchemaChange` on your gateway.
 - `apollo-server-caching`: The test suite helper works differently, and the `TestableKeyValueCache` interface is removed.
 - `apollo-datasource-rest`: We no longer officially support overriding the `baseURL` property with a getter, because TypeScript 4 does not allow you to do that.
+- `apollo-server-express`: We no longer officially support using this package with the `connect` framework. We have not actively removed any `connect` compatibility code and do still test that it works with `connect`, but we reserve the right to break that compatibility without a major version bump of this package (though it will certainly be noted in the CHANGELOG if we do so).
 - Top-level exports have changed. E.g.,
 
   - We no longer re-export the entirety of `graphql-tools` (including `makeExecutableSchema`) from all Apollo Server packages.
